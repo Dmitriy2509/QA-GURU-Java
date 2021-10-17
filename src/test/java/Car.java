@@ -7,6 +7,10 @@ public class Car {
     Car() {
 
     }
+//    Why do you check for arguments/parameters in a constructor if the instance is anyway being created?
+//    If the instance won't be created with an invalid parameter value, the method should throw an IllegalArgumentException
+//    But... I'm not sure that it is good practice when the constructor throws an exception
+//    I'd check parameters before passing them to the constructor
 
     Car(int length, int width, int height) {
         if (length > 0) {
